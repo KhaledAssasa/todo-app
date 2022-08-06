@@ -6,8 +6,8 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/KhaledAssasa/todo-app.git'
-                sh "docker build -t 135331/todo:latest ."
-                sh "docker run 135331/todo:latest ."
+                sh "docker build -t todo-app ."
+                sh "docker run todo:app ."
             }
             }
         }
